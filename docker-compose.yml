@@ -1,0 +1,41 @@
+version: "2"
+services:
+  api_common:
+    image: toancong/phpup:centos-nginx-php7
+    volumes:
+      - .:/app
+    environment:
+      - WEBROOT=/app
+  api:
+    extends:
+      service: api_common
+    depends_on:
+      - db_core
+    ports:
+      - 11110:8080
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 11120:80
+    depends_on:
+      - db_core
+    environment:
+      - PMA_HOSTS=db_core
+      - PMA_USER=root
+      - PMA_PASSWORD=none
+  db_core:
+    image: mysql:5.7
+    volumes:
+      - .:/app
+    ports:
+      - 13388:3306
+    environment:
+      - MYSQL_DATABASE=request
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=none
+      - MYSQL_ROOT_PASSWORD=none
+    command: mysqld --sql_mode=""
+  redis_db:
+    image: redis
+    ports:
+      - 6379:6379
