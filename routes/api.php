@@ -17,4 +17,6 @@ use Illuminate\Http\Request;
     return $request->user();
 });*/
 
-Route::resource('off', 'Api\RequestController');
+Route::resource('request-off', 'Api\RequestController');
+//Route::resource('request-ot', 'Api\RequestController');
+//Route::resource('request/show/:id', 'Api\RequestController');

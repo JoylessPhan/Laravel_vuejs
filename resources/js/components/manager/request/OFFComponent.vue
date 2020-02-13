@@ -17,12 +17,15 @@
                     <template #tbody="props">
                         <tr v-for="item in props.items">
                             <th scope="row">{{item.id}}</th>
-                            <th>{{item.last_name + item.first_name}}</th>
+                            <th @click="$router.push('/request/show/'+item.id)">{{item.last_name + item.first_name}}</th>
                             <th>{{item.email}}</th>
                             <th>{{item.phone}}</th>
                             <th>{{item.address}}</th>
                             <th>
-                                <button class="btn btn-danger btn-sm">Delete</button>
+                                <button class="btn btn-info btn-sm" @click="$router.push('/request/show/'+item.id)">Detail</button>
+                            </th>
+                            <th>
+                                <button class="btn btn-danger btn-sm">Edit</button>
                             </th>
                         </tr>
                     </template>
@@ -57,11 +60,5 @@
         components: {
             DataTable,
         },
-        created() {
-
-        },
-        methods: {
-
-        }
     }
 </script>

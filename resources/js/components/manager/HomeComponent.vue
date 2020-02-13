@@ -6,11 +6,11 @@
             </li>
             <li class="nav-item">
 <!--                <a class="nav-link" id="request-off-tab" data-toggle="tab" href="#request-off" role="tab" aria-controls="request-off" aria-selected="false">Profile</a>-->
-                <router-link class="nav-link" tag="a" to="/off" id="request-off-tab" data-toggle="tab" href="#request-off" role="tab" aria-controls="request-off" aria-selected="false">Request OFF</router-link>
+                <router-link class="nav-link" tag="a" to="/request-off" id="request-off-tab" data-toggle="tab" href="#request-off" role="tab" aria-controls="request-off" aria-selected="false">Request OFF</router-link>
             </li>
             <li class="nav-item">
 <!--                <a class="nav-link" id="request-ot-tab" data-toggle="tab" href="#request-ot" role="tab" aria-controls="request-ot" aria-selected="false">Contact</a>-->
-                <router-link class="nav-link" tag="a" to="/ot" id="request-ot-tab" data-toggle="tab" href="#request-ot" role="tab" aria-controls="request-ot" aria-selected="false">Request OT</router-link>
+                <router-link class="nav-link" tag="a" to="/request-ot" id="request-ot-tab" data-toggle="tab" href="#request-ot" role="tab" aria-controls="request-ot" aria-selected="false">Request OT</router-link>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">

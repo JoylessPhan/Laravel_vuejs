@@ -49,6 +49,10 @@ class RequestService {
     public function show($id)
     {
         //
+        return response()
+            ->json([
+                'request' => Request::findOrFail($id)
+            ]);
     }
 
     /**

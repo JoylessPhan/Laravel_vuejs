@@ -60,7 +60,7 @@
         },
         methods: {
             fetchData() {
-                apiRequest('/api/off' + buildUrl(this.params))
+                apiRequest('/api/request-off' + buildUrl(this.params))
                     .then(res => {
                         let m = res.model;
                         this.model = m;

@@ -56,6 +56,7 @@ class RequestController extends Controller
     public function show($id)
     {
         //
+        return $this->requestService->show($id);
     }
 
     /**
