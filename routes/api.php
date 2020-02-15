@@ -18,5 +18,6 @@ use Illuminate\Http\Request;
 });*/
 
 Route::resource('request-off', 'Api\RequestController');
+Route::resource('search', 'Api\RequestController');
 //Route::resource('request-ot', 'Api\RequestController');
 //Route::resource('request/show/:id', 'Api\RequestController');

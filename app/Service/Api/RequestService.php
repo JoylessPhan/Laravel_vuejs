@@ -3,8 +3,10 @@ namespace App\Service\Api;
 
 use Illuminate\Http\Request;
 use App\Employees;
+use App\RequestOff;
 
 class RequestService {
+
     /**
      * Display a listing of the resource.
      *
@@ -51,7 +53,7 @@ class RequestService {
         //
         return response()
             ->json([
-                'request' => Request::findOrFail($id)
+                'request' => Employees::findOrFail($id)
             ]);
     }
 
@@ -87,5 +89,10 @@ class RequestService {
     public function destroy($id)
     {
         //
+        Employees::findOrFail($id)->delete();
+        return response()
+            ->json([
+                'deleted' => true,
+            ]);
     }
 }

@@ -91,5 +91,15 @@ class RequestController extends Controller
     public function destroy($id)
     {
         //
+        return $this->requestService->destroy($id);
+    }
+
+    public function search(Request $request)
+    {
+        $post = Post::where('email', $request->keywords)->get();
+        return response()
+            ->json([
+                $post
+            ]);
     }
 }
