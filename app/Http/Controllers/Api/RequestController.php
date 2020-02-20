@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Service\Api\RequestService;
+use App\Http\Requests\Api\RequestValidation;
 
 class RequestController extends Controller
 {
@@ -42,9 +43,10 @@ class RequestController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(RequestValidation $request)
     {
         //
+        return $this->requestService->store($request);
     }
 
     /**

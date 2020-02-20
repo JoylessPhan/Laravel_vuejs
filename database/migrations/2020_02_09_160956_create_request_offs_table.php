@@ -16,8 +16,9 @@ class CreateRequestOffsTable extends Migration
         Schema::create('request_offs', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('reason');
-            $table->string('interval_time');
-            $table->date('date');
+            $table->dateTime('interval_time_start');
+            $table->dateTime('interval_time_end');
+            $table->dateTime('date');
             $table->string('to');
             $table->string('carbon_copy');
             $table->bigInteger('employee_id');

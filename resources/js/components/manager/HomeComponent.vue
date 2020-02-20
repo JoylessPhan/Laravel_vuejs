@@ -17,8 +17,16 @@
                     <router-view></router-view>
                 </div>
             </div>
-            <div class="tab-pane fade" id="request-off" role="tabpanel" aria-labelledby="request-off-tab">Request OFF</div>
-            <div class="tab-pane fade" id="request-ot" role="tabpanel" aria-labelledby="request-ot-tab">Request OT</div>
+            <div class="tab-pane fade" id="request-off" role="tabpanel" aria-labelledby="request-off-tab">
+                <div class="container">
+                    <router-view></router-view>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="request-ot" role="tabpanel" aria-labelledby="request-ot-tab">
+                <div class="container">
+                    <router-view></router-view>
+                </div>
+            </div>
         </div>
     </div>
 </template>

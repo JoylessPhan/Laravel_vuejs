@@ -26,7 +26,19 @@ export const deleteRequest = (id) => {
     )
 };
 
-export const searchEmail = (params) => {
+export const createRequest = (formData) => {
+    return new Promise(
+        (resolve, reject) => {
+            apiRequest('/api/request-off', apiMethod.post, formData)
+                .then(res => resolve(res))
+                .catch(function (error) {
+                    reject(error)
+                });
+        }
+    )
+};
+
+/*export const searchEmail = (params) => {
     return new Promise(
         (resolve, reject) => {
             apiRequest('api/search' + buildUrl(params))
@@ -36,4 +48,4 @@ export const searchEmail = (params) => {
                 })
         }
     )
-};
+};*/

@@ -5,7 +5,7 @@
                <div class="row">
                    <div class="col-6">List</div>
                    <div class="col-6 float-right">
-                       <button class="btn btn-sm btn-success float-right">Create</button>
+                       <button class="btn btn-sm btn-success float-right" @click="$router.push('/request/create')">Create</button>
                    </div>
                </div>
             </div>

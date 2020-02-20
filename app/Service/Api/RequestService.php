@@ -17,7 +17,7 @@ class RequestService {
         //
         return response()
             ->json([
-                'model' => Employees::DataTablePaginate()
+                'model' => RequestOff::DataTablePaginate()
             ]);
     }
 
@@ -40,6 +40,35 @@ class RequestService {
     public function store(Request $request)
     {
         //
+        $input              = $request->all();
+        $timeOff            = explode(' ~ ', $input['time_off']);
+        $intervalTimeStart  = date_format(date_create($timeOff[0]),"d-m-Y H:i:s");
+        $intervalTimeEnd    = date_format(date_create($timeOff[1]),"d-m-Y H:i:s");
+        dd(date_create($timeOff[0]));
+        /*$input = [
+            'interval_time_start'   => $intervalTimeStart ?? '',
+            'interval_time_end'     => $intervalTimeEnd ?? '',
+            'employee_id'           => 1,
+        ];*/
+/*        $input['date']                  = date_format(date_create($input['date']),"d-m-Y H:i:s");
+        $input['interval_time_start']   = $intervalTimeStart ?? '';
+        $input['interval_time_end']     = $intervalTimeEnd ?? '';
+        $input['employee_id']           = 1;
+        unset($input['time_off']);*/
+
+        RequestOff::create([
+            'reason'                => (string)$input['reason'],
+            'interval_time_start'   => date_create($timeOff[0]),
+            'interval_time_end'     => date_create($timeOff[1]),
+            'date'                  => date_create($input['date']),
+            'to'                    => (string)$input['to'],
+            'carbon_copy'           => (string)$input['carbon_copy'],
+            'employee_id'           => 1,
+        ]);
+        return response()
+            ->json([
+                'save' => true,
+            ]);
     }
 
     /**

@@ -114,17 +114,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ProjectIn/jinjer_core_salary" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Backend" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/js/components/manager/request" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Http/Requests/Api" />
       <recent name="$PROJECT_DIR$/app/Service/Api" />
       <recent name="$PROJECT_DIR$/app/Http/Controllers/Api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunManager" selected="Docker.docker-compose.yml.redis_db: Compose Deployment">
@@ -168,6 +170,7 @@
       <workItem from="1581516571068" duration="5643000" />
       <workItem from="1581525760075" duration="18856000" />
       <workItem from="1581698953312" duration="2715000" />
+      <workItem from="1581775681178" duration="31324000" />
     </task>
     <servers />
   </component>
@@ -179,10 +182,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2029" y="344" width="635" height="416" key="#com.intellij.fileTypes.FileTypeChooser/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581270080182" />
-    <state x="2104" y="133" width="476" height="838" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581269961446">
+    <state x="2104" y="133" width="476" height="838" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581946924207">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2104" y="133" width="476" height="838" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581269961446" />
+    <state x="2104" y="133" width="476" height="838" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581946924207" />
     <state x="2084" y="310" width="524" height="484" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1581341316278">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -191,10 +194,10 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="2020" y="263" width="652" height="579" key="#docker-compose.yml.redis_db:_Compose_Deployment/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581246406889" />
-    <state x="2134" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1581250175966">
+    <state x="2134" y="310" width="424" height="484" key="FileChooserDialogImpl" timestamp="1582036387749">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2134" y="310" width="424" height="484" key="FileChooserDialogImpl/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581250175966" />
+    <state x="2134" y="310" width="424" height="484" key="FileChooserDialogImpl/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1582036387749" />
     <state x="1815" y="175" key="SettingsEditor" timestamp="1581242248980">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
@@ -211,9 +214,9 @@
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
     <state x="1988" y="125" width="727" height="855" key="find.popup/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581604685882" />
-    <state x="2015" y="198" width="670" height="676" key="search.everywhere.popup" timestamp="1581340932897">
+    <state x="2015" y="198" width="670" height="676" key="search.everywhere.popup" timestamp="1582036187425">
       <screen x="1366" y="0" width="1920" height="1080" />
     </state>
-    <state x="2015" y="198" width="670" height="676" key="search.everywhere.popup/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1581340932897" />
+    <state x="2015" y="198" width="670" height="676" key="search.everywhere.popup/1366.0.1920.1080/0.27.1366.741@1366.0.1920.1080" timestamp="1582036187425" />
   </component>
 </project>
